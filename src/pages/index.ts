@@ -1,0 +1,1 @@
+export { QuizLayout, QuizPage } from './game-pages'
