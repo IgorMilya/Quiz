@@ -3,14 +3,17 @@ import { Trans, useTranslation } from 'react-i18next'
 import { AnswerTypes } from 'types'
 
 interface SelectProps {
-  onClick: () => void,
+  onClick: (reply: string[]) => void,
   answer: string | AnswerTypes,
   isIcon: boolean
 }
 
 const Select: FC<SelectProps> = ({ answer, onClick, isIcon }) => {
   const { i18n } = useTranslation()
-  const changeLanguage = (lng: string | null) => {
+  const isIconClass = isIcon ? 'pt-[30px] pb-[30px] pl-[25px] pr-[25px] text-center' : ' w-full pt-[18px] pb-[18px] pl-[20px]'
+  const isObject = typeof answer !== 'string'
+
+  const changeLanguage = (lng: string) => {
     if (lng === 'English') {
       i18n.changeLanguage('en')
     } else if (lng === 'French') {
@@ -22,23 +25,24 @@ const Select: FC<SelectProps> = ({ answer, onClick, isIcon }) => {
     }
   }
 
+
   const handleStoreData = (e: MouseEvent<HTMLLIElement, globalThis.MouseEvent>) => {
-    changeLanguage(e.currentTarget.textContent)
-    onClick()
+    const text = e.currentTarget.textContent;
+    text && changeLanguage(text)
+    text && onClick([text])
   }
-  const isIconClass = isIcon ? 'pt-[30px] pb-[30px] pl-[25px] pr-[25px] text-center' : ' w-full pt-[18px] pb-[18px] pl-[20px]'
 
   return (
     <li onClick={handleStoreData}
-        className={`bg-secondary text-white  rounded-[16px] ${isIconClass}`}>
+        className={`cursor-pointer bg-secondary text-white  rounded-[16px] ${isIconClass}`}>
 
-      {typeof answer !== 'string' && (
+      {isObject && (
         <div className="w-[52px] h-[52px] mb-[10px]">
           <img src={`${answer.icon}`} alt="icon" />
         </div>
       )}
 
-      <Trans i18nKey={typeof answer === 'string' ? answer : answer.text} />
+      <Trans i18nKey={!isObject ? answer : answer.text} />
     </li>
   )
 }

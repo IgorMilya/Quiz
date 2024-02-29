@@ -3,7 +3,7 @@ import { Icon } from 'assets'
 
 export const questions: QuestionsTypes[] = [
   {
-    type: 'single',
+    type: 'single-select',
     title: `questionFirst.title`,
     subtitle: 'questionFirst.subtitle',
     answers: [
@@ -14,7 +14,7 @@ export const questions: QuestionsTypes[] = [
     ],
   },
   {
-    type: 'single',
+    type: 'single-select',
     title: 'questionSecond.title',
     subtitle: 'questionSecond.subtitle',
     answers: [
@@ -33,7 +33,7 @@ export const questions: QuestionsTypes[] = [
     ],
   },
   {
-    type: 'single',
+    type: 'single-select',
     title: 'questionThird.title',
     answers: [
       'questionThird.firstAnswers',
@@ -43,7 +43,7 @@ export const questions: QuestionsTypes[] = [
     ],
   },
   {
-    type: 'multiple',
+    type: 'multiple-select',
     title: 'questionFourth.title',
     answers: [
       'questionFourth.firstAnswers',

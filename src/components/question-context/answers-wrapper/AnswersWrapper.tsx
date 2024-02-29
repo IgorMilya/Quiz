@@ -4,7 +4,7 @@ interface SelectWrapperProps extends PropsWithChildren {
   isIcon: boolean
 }
 
-const SelectWrapper: FC<SelectWrapperProps> = ({ children, isIcon }) => {
+const AnswersWrapper: FC<SelectWrapperProps> = ({ children, isIcon }) => {
 
   return (
     <ul className={`flex gap-[12px] justify-center ${isIcon ? 'flex-wrap' : 'flex-col'}`}>
@@ -13,4 +13,4 @@ const SelectWrapper: FC<SelectWrapperProps> = ({ children, isIcon }) => {
   )
 }
 
-export default SelectWrapper
+export default AnswersWrapper
