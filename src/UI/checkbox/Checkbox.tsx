@@ -5,10 +5,10 @@ import { Icon } from 'assets'
 
 interface CheckboxProps {
   answer: string | AnswerTypes,
-  handleSelectTopic: (answer: string) => void;
+  onSelect: (answer: string) => void;
 }
 
-const Checkbox: FC<CheckboxProps> = ({ answer, handleSelectTopic }) => {
+const Checkbox: FC<CheckboxProps> = ({ answer, onSelect }) => {
   const { t } = useTranslation()
   const [isChecked, setIsChecked] = useState(false)
   const isActiveMarkClass = isChecked ? 'bg-primary-pinkDark' : 'bg-[#6D4376]'
@@ -17,7 +17,7 @@ const Checkbox: FC<CheckboxProps> = ({ answer, handleSelectTopic }) => {
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked)
-    isNotObject && handleSelectTopic(t(answer))
+    isNotObject && onSelect(t(answer))
   }
 
   return (

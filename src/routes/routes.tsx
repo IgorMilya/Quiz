@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { QuizLayout, QuizPage } from 'pages'
+import { QuizPage, LoaderPage, EmailPage } from 'pages'
+import { QuizLayout } from 'components'
 import { ROUTES } from './routes.utils'
 
 const AppRoutes = () => {
@@ -12,7 +13,9 @@ const AppRoutes = () => {
         <Route path={ROUTES.QUIZ} element={<QuizPage />}>
           <Route path={ROUTES.QUIZ_INDEX} element={<QuizPage />} />
         </Route>
-        <Route path={ROUTES.EMAIL} element={<Navigate to={ROUTES.EMAIL} />} />
+        <Route path={ROUTES.LOADING} element={<LoaderPage />} />
+        <Route path={ROUTES.EMAIL} element={<EmailPage />} />
+        <Route path={ROUTES.DOWNLOAD} element={<EmailPage />} />
       </Route>
     </Routes>
   )

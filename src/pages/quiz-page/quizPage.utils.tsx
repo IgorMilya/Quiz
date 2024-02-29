@@ -1,5 +1,5 @@
-import { QuestionsTypes } from 'types'
-import { Icon } from 'assets'
+import { QuestionsTypes } from 'types/index'
+import { Icon } from 'assets/index'
 
 export const questions: QuestionsTypes[] = [
   {

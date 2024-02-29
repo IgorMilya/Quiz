@@ -11,7 +11,7 @@ const QuizPage: FC = () => {
   const navigate = useNavigate()
   const handleNext = () => {
     if (progress === questions.length) {
-      navigate(`${ROUTES.EMAIL}`)
+      navigate(`${ROUTES.LOADING}`)
     } else {
       navigate(`${progress + 1}`)
     }

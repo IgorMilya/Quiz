@@ -1,9 +1,9 @@
-import { FC, useState } from 'react'
-import { QuestionsTypes, StoreTypes } from 'types'
+import { FC } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
-import { Select, Checkbox, Button, BubbleSelect } from 'UI'
-import { AnswerActionWrapper } from './answer-action-wrappe'
-import { AnswersWrapper } from './answers-wrapper'
+import { Select } from 'UI'
+import { QuestionsTypes, StoreTypes } from 'types'
+import { MultipleSelectContext } from './mulptiple-select-context'
+import { BubbleContext } from './bubble-context'
 
 interface QuestionContextProps {
   handleNext: () => void,
@@ -13,27 +13,10 @@ interface QuestionContextProps {
 
 const QuestionContext: FC<QuestionContextProps> = ({ handleNext, questions, index }) => {
   const { t } = useTranslation()
-  const [bubbleSelected, setBubbleSelected] = useState<string[]>([])
-  const [multipleSelected, setMultipleSelected] = useState<string[]>([])
-
   const currentQuiz = Number(index) - 1
   const quiz = questions[currentQuiz]
   const isIcon = quiz.answers.every(answer => typeof answer !== 'string')
 
-  const handleSelectTopic = (topic: string) => {
-    if (bubbleSelected.includes(topic)) {
-      setBubbleSelected(bubbleSelected.filter(selectedTopic => selectedTopic !== topic))
-    } else {
-      setBubbleSelected([...bubbleSelected, topic])
-    }
-  }
-  const handleMultipleSelected = (topic: string) => {
-    if (multipleSelected.includes(topic)) {
-      setMultipleSelected(multipleSelected.filter(selectedTopic => selectedTopic !== topic))
-    } else {
-      setMultipleSelected([...multipleSelected, topic])
-    }
-  }
 
   const handleStoreData = (reply: string[]) => {
     const store = localStorage.getItem('users_replies')
@@ -66,37 +49,16 @@ const QuestionContext: FC<QuestionContextProps> = ({ handleNext, questions, inde
       </p>
 
       {quiz.type === 'single-select' && (
-        <AnswersWrapper isIcon={isIcon}>
+        <ul className={`flex gap-[12px] justify-center ${isIcon ? 'flex-wrap' : 'flex-col'}`}>
           {quiz.answers.map((answer, index) =>
             <Select key={index} onClick={handleStoreData} answer={answer} isIcon={isIcon} />)};
-        </AnswersWrapper>
+        </ul>
       )}
 
-      {quiz.type === 'multiple-select' && (
-        <AnswerActionWrapper>
-          <AnswersWrapper isIcon={isIcon}>
-            {quiz.answers.map((answer, index) =>
-              <Checkbox key={index} answer={answer} handleSelectTopic={handleMultipleSelected} />)}
-          </AnswersWrapper>
-          <Button variant="contained" onClick={() => handleStoreData(multipleSelected)}>Next</Button>
-        </AnswerActionWrapper>
-      )}
+      {quiz.type === 'multiple-select' &&
+        <MultipleSelectContext isIcon={isIcon} quiz={quiz} onClick={handleStoreData} />}
 
-      {quiz.type === 'bubble' && (
-        <AnswerActionWrapper>
-          <AnswersWrapper isIcon={isIcon}>
-            {quiz.answers.map((answer, index) =>
-              <BubbleSelect
-                key={index}
-                answer={answer}
-                onSelect={handleSelectTopic}
-                selectedCount={bubbleSelected.length}
-              />)}
-          </AnswersWrapper>
-          <Button variant="contained" onClick={() => handleStoreData(bubbleSelected)}
-                  disabled={!bubbleSelected.length}>Next</Button>
-        </AnswerActionWrapper>
-      )}
+      {quiz.type === 'bubble' && <BubbleContext isIcon={isIcon} quiz={quiz} onClick={handleStoreData} />}
 
     </div>
   )
