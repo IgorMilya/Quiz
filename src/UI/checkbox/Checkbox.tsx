@@ -2,6 +2,7 @@ import { FC, useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 import { AnswerTypes } from 'types'
 import { Icon } from 'assets'
+import Input from '../input/Input'
 
 interface CheckboxProps {
   answer: string | AnswerTypes,
@@ -12,7 +13,7 @@ const Checkbox: FC<CheckboxProps> = ({ answer, onSelect }) => {
   const { t } = useTranslation()
   const [isChecked, setIsChecked] = useState(false)
   const isActiveMarkClass = isChecked ? 'bg-primary-pinkDark' : 'bg-[#6D4376]'
-  const isActiveLabelClass = isChecked ? 'bg-primary-pinkDark bg-opacity-20 border-2 border-primary-pinkDark ' : 'bg-secondary'
+  const isActiveLabelClass = isChecked ? 'bg-primary-pinkDark bg-opacity-20 border-primary-pinkDark ' : 'bg-secondary border-secondary'
   const isNotObject = typeof answer === 'string'
 
   const handleCheckboxChange = () => {
@@ -22,11 +23,11 @@ const Checkbox: FC<CheckboxProps> = ({ answer, onSelect }) => {
 
   return (
     <label
-      className={`cursor-pointer rounded-[16px] text-white flex items-center justify-between w-full pt-[17px] pb-[17px] pl-[20px] pr-[20px] ${isActiveLabelClass}`}>
+      className={`border-2 cursor-pointer rounded-[16px] text-white flex items-center justify-between w-full py-[17px] px-[20px] ${isActiveLabelClass}`}>
       {isNotObject && <Trans i18nKey={answer} />}
       <input
         type="checkbox"
-        className="custom-checkbox appearance-none"
+        className="appearance-none"
         checked={isChecked}
         onChange={handleCheckboxChange}
       />

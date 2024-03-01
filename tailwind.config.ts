@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import colors from 'tailwindcss/colors'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   content: [
@@ -16,6 +17,12 @@ const config: Config = {
       secondary: '#36173D',
       background: '#1F002B',
       ...colors,
+    },
+    extend: {
+      fontFamily: {
+        'sans': ['"Nunito Sans Variable"', ...defaultTheme.fontFamily.sans],
+        cursive: ['Niconne', 'cursive'],
+      },
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Header, QuestionContext } from 'components'
 import { ROUTES } from 'routes'
-import { questions } from './quizPage.utils'
+import { questions } from 'utils'
 
 
 const QuizPage: FC = () => {
@@ -11,7 +11,7 @@ const QuizPage: FC = () => {
   const navigate = useNavigate()
   const handleNext = () => {
     if (progress === questions.length) {
-      navigate(`${ROUTES.LOADING}`)
+      navigate(ROUTES.LOADING)
     } else {
       navigate(`${progress + 1}`)
     }

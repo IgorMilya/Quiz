@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    body {
-        font-family: 'Nunito Sans Variable', sans-serif;
-    }
-}
 * {
     box-sizing: border-box
+}
+
+input{
+    outline: none;
 }

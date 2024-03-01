@@ -1,6 +1,6 @@
 export type StoreTypes = {
   order: number,
-  type: 'single-select' | 'multiple-select' | 'bubble'
+  type: string,
   title: string,
   answer: string,
 }

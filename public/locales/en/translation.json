@@ -37,7 +37,27 @@
     "fourthAnswers": "Billionaire",
     "fifthAnswers": "Romance",
     "sixthAnswers": "Young Adult",
-    "seventhAnswers": "Bad Boy"
+    "seventhAnswers": "Bad Boy",
+    "eighthAnswers": "Mountains",
+    "ninthAnswers": "Paranormal Mystery",
+    "tenthAnswers": "Steampunk Adventure",
+    "eleventhAnswers": "Fantasy Quest",
+    "twelfthAnswers": "Time Travel",
+    "thirteenthAnswers": "Space Exploration",
+    "fourteenthAnswers": "Survival Horror",
+    "fifteenthAnswers": "Artificial Intelligence",
+    "sixteenthAnswers": "Magical Realism",
+    "seventeenthAnswers": "Alternate History",
+    "eighteenthAnswers": "Superhero",
+    "nineteenthAnswers": "Espionage",
+    "twentiethAnswers": "Underwater Exploration",
+    "twentyFirstAnswers": "Culinary Adventure",
+    "twentySecondAnswers": "Robotic Revolution",
+    "twentyThirdAnswers": "Wild West Outlaw",
+    "twentyFourthAnswers": "Mythological Quest",
+    "twentyFifthAnswers": "Alien Invasion",
+    "twentySixthAnswers": "Time Loop",
+    "twentySeventhAnswers": "Virtual Reality"
   },
   "loaderText": "Finding collections for you...",
   "emailPage": {
@@ -52,5 +72,6 @@
     "subtitle": "for supporting us and passing quiz",
     "downloadingText": "Download my answers",
     "buttonText": "Retake quiz"
-  }
+  },
+  "notFoundText": "Back"
 }

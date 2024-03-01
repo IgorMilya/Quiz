@@ -1,3 +1,6 @@
 export { QuizPage } from './quiz-page'
 export { LoaderPage } from './loader-page'
 export { EmailPage } from './email-page'
+export { DownloadPage } from './download-page'
+export { NotFoundPage } from './not-found-page'
+export { WelcomeQuiz } from './welcome-quiz'

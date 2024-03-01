@@ -1,8 +1,77 @@
 {
-  "title": "Welcome to react using react-i18next",
-  "description": {
-    "part1": "To get started",
-    "part2": "Switch language between english and german using buttons above."
-  }
-
+  "questionFirst": {
+    "title": "¿Cuál es tu idioma preferido?",
+    "subtitle": "Elige un idioma",
+    "firstAnswers": "Inglés",
+    "secondAnswers": "Francés",
+    "thirdAnswers": "Alemán",
+    "fourthAnswers": "Español"
+  },
+  "questionSecond": {
+    "title": "¿Con qué género te identificas?",
+    "subtitle": "Por favor, comparte cómo te identificas",
+    "firstAnswers": "Femenino",
+    "secondAnswers": "Masculino",
+    "thirdAnswers": "Otro"
+  },
+  "questionThird": {
+    "title": "¿Cuál es tu edad?",
+    "firstAnswers": "18-29 años",
+    "secondAnswers": "30-39 años",
+    "thirdAnswers": "40-49 años",
+    "fourthAnswers": "50+"
+  },
+  "questionFourth": {
+    "title": "¿Qué es lo que menos te gusta de un libro?",
+    "firstAnswers": "Falta de lógica",
+    "secondAnswers": "Velocidad lenta",
+    "thirdAnswers": "Falta de humor",
+    "fourthAnswers": "Final demasiado genérico"
+  },
+  "questionFifth": {
+    "title": "¿Cuáles son tus temas favoritos?",
+    "subtitle": "Elige hasta 3 temas que te gusten",
+    "firstAnswers": "Hombre lobo",
+    "secondAnswers": "Acción",
+    "thirdAnswers": "Obsesión real",
+    "fourthAnswers": "Multimillonario",
+    "fifthAnswers": "Romance",
+    "sixthAnswers": "Juvenil",
+    "seventhAnswers": "Chico malo",
+    "eighthAnswers": "Montañas",
+    "ninthAnswers": "Misterio Paranormal",
+    "tenthAnswers": "Aventura Steampunk",
+    "eleventhAnswers": "Búsqueda Fantástica",
+    "twelfthAnswers": "Viaje en el Tiempo",
+    "thirteenthAnswers": "Exploración Espacial",
+    "fourteenthAnswers": "Horror de Supervivencia",
+    "fifteenthAnswers": "Inteligencia Artificial",
+    "sixteenthAnswers": "Realismo Mágico",
+    "seventeenthAnswers": "Historia Alternativa",
+    "eighteenthAnswers": "Superhéroe",
+    "nineteenthAnswers": "Espionaje",
+    "twentiethAnswers": "Exploración Submarina",
+    "twentyFirstAnswers": "Aventura Culinaria",
+    "twentySecondAnswers": "Revolución Robótica",
+    "twentyThirdAnswers": "Forajido del Salvaje Oeste",
+    "twentyFourthAnswers": "Búsqueda Mitológica",
+    "twentyFifthAnswers": "Invasión Alienígena",
+    "twentySixthAnswers": "Bucle Temporal",
+    "twentySeventhAnswers": "Realidad Virtual"
+  },
+  "loaderText": "Buscando colecciones para ti...",
+  "emailPage": {
+    "title": "Correo electrónico",
+    "subtitle": "Introduce tu correo electrónico para obtener acceso completo",
+    "placeholder": "Tu correo electrónico",
+    "policy": "Al continuar, acepto la política de privacidad y las condiciones de uso."
+  },
+  "buttonText": "Siguiente",
+  "finalPage": {
+    "title": "Gracias",
+    "subtitle": "por tu apoyo y por pasar el cuestionario",
+    "downloadingText": "Descargar mis respuestas",
+    "buttonText": "Repetir cuestionario"
+  },
+  "notFoundText": "Atrás"
 }

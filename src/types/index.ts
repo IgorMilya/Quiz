@@ -1,3 +1,5 @@
 export type { QuestionsTypes } from './questionsTypes'
 export type { AnswerTypes } from './answerTypes'
 export type { StoreTypes } from './storeTypes'
+export type { EmailFormTypes } from './emailFormTypes'
+export type { GetStoredDataTypes } from './getStoredDataTypes'
