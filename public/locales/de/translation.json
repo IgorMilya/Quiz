@@ -1,0 +1,77 @@
+{
+  "questionFirst": {
+    "title": "Was ist Ihre bevorzugte Sprache?",
+    "subtitle": "Wählen Sie eine Sprache aus",
+    "firstAnswers": "Englisch",
+    "secondAnswers": "Französisch",
+    "thirdAnswers": "Deutsch",
+    "fourthAnswers": "Spanisch"
+  },
+  "questionSecond": {
+    "title": "Mit welchem Geschlecht identifizieren Sie sich?",
+    "subtitle": "Bitte teilen Sie mit, wie Sie sich identifizieren",
+    "firstAnswers": "Weiblich",
+    "secondAnswers": "Männlich",
+    "thirdAnswers": "Andere"
+  },
+  "questionThird": {
+    "title": "Wie alt sind Sie?",
+    "firstAnswers": "18-29 Jahre",
+    "secondAnswers": "30-39 Jahre",
+    "thirdAnswers": "40-49 Jahre",
+    "fourthAnswers": "50+"
+  },
+  "questionFourth": {
+    "title": "Was mögen Sie am wenigsten an einem Buch?",
+    "firstAnswers": "Mangel an Logik",
+    "secondAnswers": "Langsame Geschwindigkeit",
+    "thirdAnswers": "Mangel an Humor",
+    "fourthAnswers": "Allzu generisches Ende"
+  },
+  "questionFifth": {
+    "title": "Was sind Ihre Lieblingsthemen?",
+    "subtitle": "Wählen Sie bis zu 3 Themen aus, die Sie mögen",
+    "firstAnswers": "Werwolf",
+    "secondAnswers": "Action",
+    "thirdAnswers": "Königliche Obsession",
+    "fourthAnswers": "Milliardär",
+    "fifthAnswers": "Romantik",
+    "sixthAnswers": "Jugendlich",
+    "seventhAnswers": "Bad Boy",
+    "eighthAnswers": "Montagne",
+    "ninthAnswers": "Mistero Paranormale",
+    "tenthAnswers": "Avventura Steampunk",
+    "eleventhAnswers": "Missione Fantasy",
+    "twelfthAnswers": "Viaggio nel Tempo",
+    "thirteenthAnswers": "Esplorazione Spaziale",
+    "fourteenthAnswers": "Orrore della Sopravvivenza",
+    "fifteenthAnswers": "Intelligenza Artificiale",
+    "sixteenthAnswers": "Realismo Magico",
+    "seventeenthAnswers": "Storia Alternativa",
+    "eighteenthAnswers": "Supereroe",
+    "nineteenthAnswers": "Spionaggio",
+    "twentiethAnswers": "Esplorazione Sottomarina",
+    "twentyFirstAnswers": "Avventura Culinarie",
+    "twentySecondAnswers": "Rivoluzione Robotica",
+    "twentyThirdAnswers": "Fuorilegge del Vecchio West",
+    "twentyFourthAnswers": "Ricerca Mitologica",
+    "twentyFifthAnswers": "Invasione Aliena",
+    "twentySixthAnswers": "Ciclo Temporale",
+    "twentySeventhAnswers": "Realtà Virtuale"
+  },
+  "loaderText": "Sammlungen für Sie suchen...",
+  "emailPage": {
+    "title": "E-Mail",
+    "subtitle": "Geben Sie Ihre E-Mail ein, um vollen Zugriff zu erhalten",
+    "placeholder": "Ihre E-Mail",
+    "policy": "Indem ich fortfahre, stimme ich der Datenschutzrichtlinie und den Nutzungsbedingungen zu."
+  },
+  "buttonText": "Weiter",
+  "finalPage": {
+    "title": "Vielen Dank",
+    "subtitle": "für Ihre Unterstützung und das Absolvieren des Quiz",
+    "downloadingText": "Laden Sie meine Antworten herunter",
+    "buttonText": "Quiz erneut machen"
+  },
+  "notFoundText": "Zurück"
+}

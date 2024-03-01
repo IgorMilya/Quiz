@@ -1,0 +1,77 @@
+{
+  "questionFirst": {
+    "title": "Quelle est votre langue préférée ?",
+    "subtitle": "Choisissez une langue",
+    "firstAnswers": "Anglais",
+    "secondAnswers": "Français",
+    "thirdAnswers": "Allemand",
+    "fourthAnswers": "Espagnol"
+  },
+  "questionSecond": {
+    "title": "Avec quel genre vous identifiez-vous ?",
+    "subtitle": "Veuillez indiquer comment vous vous identifiez",
+    "firstAnswers": "Féminin",
+    "secondAnswers": "Masculin",
+    "thirdAnswers": "Autre"
+  },
+  "questionThird": {
+    "title": "Quel âge avez-vous ?",
+    "firstAnswers": "18-29 ans",
+    "secondAnswers": "30-39 ans",
+    "thirdAnswers": "40-49 ans",
+    "fourthAnswers": "50+"
+  },
+  "questionFourth": {
+    "title": "Qu'est-ce que vous détestez le plus dans un livre ?",
+    "firstAnswers": "Manque de logique",
+    "secondAnswers": "Lenteur",
+    "thirdAnswers": "Manque d'humour",
+    "fourthAnswers": "Fin trop générique"
+  },
+  "questionFifth": {
+    "title": "Quels sont vos sujets préférés ?",
+    "subtitle": "Choisissez jusqu'à 3 sujets que vous aimez",
+    "firstAnswers": "Loup-garou",
+    "secondAnswers": "Action",
+    "thirdAnswers": "Obsession royale",
+    "fourthAnswers": "Milliardaire",
+    "fifthAnswers": "Romance",
+    "sixthAnswers": "Jeunesse",
+    "seventhAnswers": "Mauvais garçon",
+    "eighthAnswers": "Montagnes",
+    "ninthAnswers": "Mystère Paranormal",
+    "tenthAnswers": "Aventure Steampunk",
+    "eleventhAnswers": "Quête Fantastique",
+    "twelfthAnswers": "Voyage dans le Temps",
+    "thirteenthAnswers": "Exploration Spatiale",
+    "fourteenthAnswers": "Horreur de Survie",
+    "fifteenthAnswers": "Intelligence Artificielle",
+    "sixteenthAnswers": "Réalisme Magique",
+    "seventeenthAnswers": "Histoire Alternative",
+    "eighteenthAnswers": "Super-héros",
+    "nineteenthAnswers": "Espionnage",
+    "twentiethAnswers": "Exploration Sous-Marine",
+    "twentyFirstAnswers": "Aventure Culinaire",
+    "twentySecondAnswers": "Révolution Robotique",
+    "twentyThirdAnswers": "Hors-la-loi du Far West",
+    "twentyFourthAnswers": "Quête Mythologique",
+    "twentyFifthAnswers": "Invasion Extraterrestre",
+    "twentySixthAnswers": "Boucle Temporelle",
+    "twentySeventhAnswers": "Réalité Virtuelle"
+  },
+  "loaderText": "Recherche de collections pour vous...",
+  "emailPage": {
+    "title": "Adresse e-mail",
+    "subtitle": "Entrez votre adresse e-mail pour obtenir un accès complet",
+    "placeholder": "Votre adresse e-mail",
+    "policy": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation."
+  },
+  "buttonText": "Suivant",
+  "finalPage": {
+    "title": "Merci",
+    "subtitle": "pour votre soutien et pour avoir passé le quiz",
+    "downloadingText": "Télécharger mes réponses",
+    "buttonText": "Refaire le quiz"
+  },
+  "notFoundText": "Dos"
+}

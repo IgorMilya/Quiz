@@ -1,10 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React, { Suspense } from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRoutes } from 'routes'
+import { FallbackLoader } from 'UI'
+import './style/index.css'
+import './i18n'
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+import '@fontsource-variable/nunito-sans'
+import '@fontsource/niconne'
+
+const root = ReactDOM.createRoot(document.getElementById('root')!)
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Suspense fallback={<FallbackLoader />}>
+        <AppRoutes />
+      </Suspense>
+    </BrowserRouter>
   </React.StrictMode>,
-);
+)
+
+
+
