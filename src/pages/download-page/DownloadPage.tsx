@@ -44,10 +44,10 @@ const DownloadPage: FC = () => {
 
   return (
     <div className="flex flex-col items-center relative h-full">
-      <h1 className="font-cursive text-[#ECECFB] text-[36px] leading-[43.65px] mt-[101px]">
+      <h1 className="font-cursive text-[#ECECFB] text-[36px] leading-[43.65px] mt-[101px] text-center">
         <Trans i18nKey="finalPage.title" />
       </h1>
-      <p className="text-[#ECECFB] leading-[25px] text-[17px] font-semibold mb-[62px]">
+      <p className="text-[#ECECFB] leading-[25px] text-[17px] font-semibold mb-[62px] text-center">
         <Trans i18nKey="finalPage.subtitle" />
       </p>
       <div>

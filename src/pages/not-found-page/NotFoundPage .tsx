@@ -4,7 +4,7 @@ import { Button } from 'UI'
 
 const NotFoundPage: FC = () => {
   const navigate = useNavigate();
-  const errorTextStyle = 'text-white text-[70px] font-extrabold'
+  const errorTextStyle = 'text-white text-[70px] font-extrabold text-center'
 
   const handleBack = () => navigate(-1);
 
