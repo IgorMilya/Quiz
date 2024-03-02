@@ -1,6 +1,8 @@
-# (**Quiz**)(https://quiz-igormilya.vercel.app/quiz)
+# [Quiz](https://quiz-igormilya.vercel.app/quiz)
 
-## Setup
+## Rsbuild
+
+### Setup
 
 Install the dependencies:
 
@@ -8,7 +10,7 @@ Install the dependencies:
 yarn install
 ```
 
-## Get Started
+### Get Started
 
 Start the dev server:
 
