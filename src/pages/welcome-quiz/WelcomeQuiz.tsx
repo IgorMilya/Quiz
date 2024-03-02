@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Trans } from 'react-i18next'
 import { Button } from 'UI'
 import { ROUTES } from 'routes'
 

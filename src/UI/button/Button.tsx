@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, MouseEvent, ReactElement, ReactNode } from 'react'
+import { FC, PropsWithChildren, MouseEvent } from 'react'
 
 interface ButtonProps extends PropsWithChildren {
   variant: 'contained' | 'text',
