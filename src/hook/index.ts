@@ -1,0 +1,1 @@
+export { useLocalStoreHook } from './useLocalStoreHook'

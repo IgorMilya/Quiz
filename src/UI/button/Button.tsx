@@ -5,6 +5,7 @@ interface ButtonProps extends PropsWithChildren {
   disabled?: boolean,
   onClick?: (e: MouseEvent<HTMLButtonElement>) => void,
   invisible?: boolean,
+  type?: 'submit'  | 'button'
 
 }
 
@@ -20,6 +21,7 @@ const Button: FC<ButtonProps> = ({
   onClick,
   disabled,
   invisible,
+  type
 }) => {
 
   const colorClasses = styleOfVariant[variant]
@@ -27,7 +29,7 @@ const Button: FC<ButtonProps> = ({
   const isInvisible = invisible && 'invisible'
   return (
     <button className={`font-extrabold text-white ${colorClasses} ${isDisabled} ${isInvisible}`}
-            onClick={onClick} disabled={disabled}>
+            onClick={onClick} disabled={disabled} type={type || 'button'}>
       {children}
     </button>
   )

@@ -5,6 +5,8 @@ import { Button } from 'UI'
 import { ROUTES } from 'routes'
 import { StoreTypes } from 'types'
 import { Icon } from 'assets'
+import { useLocalStoreHook } from '../../hook'
+import { USER_DATA, USER_REPLIES } from 'utils/const'
 
 
 const DownloadPage: FC = () => {
@@ -16,8 +18,9 @@ const DownloadPage: FC = () => {
   }
 
   const handleDownloadAnswers = () => {
-    const userData: StoreTypes[] = JSON.parse(localStorage.getItem('user_data') || '[]')
-    const userReplies: StoreTypes[] = JSON.parse(localStorage.getItem('user_replies') || '[]')
+    const { parseData: userData } = useLocalStoreHook(USER_DATA)
+    const { parseData: userReplies } = useLocalStoreHook(USER_REPLIES)
+
     const allUserData = [...userData, ...userReplies].sort((a, b) => a.order - b.order)
 
     const headers = Object.keys(allUserData[0])

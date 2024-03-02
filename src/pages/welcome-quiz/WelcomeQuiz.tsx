@@ -12,7 +12,7 @@ const WelcomeQuiz: FC = () => {
   }
   return (
     <div className="flex flex-col items-center relative h-full pt-[200px]">
-      <h1 className="font-cursive text-[#ECECFB] text-[60px]">
+      <h1 className="font-cursive text-[#ECECFB] text-[60px] text-center">
         Welcome to quiz
       </h1>
       <div className="absolute w-full bottom-[20px] flex flex-col items-center">

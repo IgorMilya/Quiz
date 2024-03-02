@@ -4,6 +4,7 @@ import { USER_REPLIES } from 'utils'
 import { AnswerTypes, QuestionsTypes, StoreTypes } from 'types'
 import { AnswerWrapper } from '../answer-wrapper'
 import { useTranslation } from 'react-i18next'
+import { useLocalStoreHook } from '../../../hook'
 
 interface BubbleContextProps {
   isIcon: boolean,
@@ -14,9 +15,8 @@ interface BubbleContextProps {
 const BubbleContext: FC<BubbleContextProps> = ({ quiz, isIcon, onClick }) => {
   const [bubbleSelected, setBubbleSelected] = useState<string[]>([])
   const { t } = useTranslation()
+  const { parseData } = useLocalStoreHook(USER_REPLIES)
 
-  const store = localStorage.getItem(USER_REPLIES)
-  const parseData: StoreTypes[] = store ? JSON.parse(store) : []
   const filteredData = parseData.filter(({ order }) => order === 3)
   const filteredAnswers = quiz.answers.filter((answer) => {
     return typeof answer !== 'string' ? t(answer.type!) === filteredData[0].answer : answer

@@ -55,7 +55,7 @@ const EmailPage: FC = () => {
                 i18nKey="emailPage.policy" /></span>
               </div>
             </div>
-            <Button variant="contained" disabled={!isValid || !dirty}>
+            <Button variant="contained" disabled={!isValid || !dirty} type="submit">
               <Trans i18nKey="buttonText"/>
             </Button>
           </Form>

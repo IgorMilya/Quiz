@@ -1,10 +1,9 @@
 import { GetStoredDataTypes, StoreTypes } from 'types'
+import { useLocalStoreHook } from 'hook'
+
 
 export const storedData = ({ storeItem, type, title, order, answer }: GetStoredDataTypes) => {
-
-  const store = localStorage.getItem(storeItem)
-  const parseData: StoreTypes[] = store ? JSON.parse(store) : []
-
+  const { parseData } = useLocalStoreHook(storeItem)
   const deletedExistedData = parseData.filter(({ order: number }) => number !== order)
 
   const preparedData: StoreTypes = {
