@@ -14,7 +14,7 @@ const NotFoundPage: FC = () => {
       <h1 className={errorTextStyle}>404</h1>
       <p className={errorTextStyle}>not found</p>
       <div className="w-full absolute bottom-[20px]">
-      <Button variant="contained" onClick={handleBack}><Trans i18nKey="notFoundText" /></Button>
+      <Button variant="contained" onClick={handleBack}>Back</Button>
       </div>
     </div>
   )

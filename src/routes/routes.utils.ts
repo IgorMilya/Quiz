@@ -6,5 +6,4 @@ export const ROUTES = {
   EMAIL: '/email',
   LOADING: '/loading',
   DOWNLOAD: '/download',
-  NOT_FOUND: '/not-found',
 }
