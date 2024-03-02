@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { QuizPage, LoaderPage, EmailPage, DownloadPage, NotFoundPage, WelcomeQuiz } from 'pages'
 import { QuizLayout } from 'components'
+import { questions } from 'utils'
 import { ROUTES } from './routes.utils'
-import { questions } from 'utils/questionData'
 
 const AppRoutes = () => {
   const { pathname } = useLocation()
