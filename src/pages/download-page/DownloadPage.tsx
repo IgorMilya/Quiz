@@ -23,7 +23,13 @@ const DownloadPage: FC = () => {
     const allUserData = [...userData, ...userReplies].sort((a, b) => a.order - b.order)
 
     const headers = Object.keys(allUserData[0])
-    const mainContent = allUserData.map(item => Object.values(item).toString())
+
+    const mainContent = allUserData.map(item => Object.values(item).map(value => {
+      if (typeof value === 'string') {
+        return value.replace(/,/g, '  ')
+      }
+      return value
+    }).join(','))
 
     const csvFormat = [headers, ...mainContent].join('\n')
 
